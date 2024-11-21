@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="/insertables/seccion-intro.css">
+    <link rel="stylesheet" href="/insertables/seccion-invertida.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="insertables/header.css">
+    <link rel="stylesheet" href="insertables/banner.css">
+    <link rel="stylesheet" href="insertables/footer.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header header-custom text-white">
+        <div class="container-fluid">
+            <div class="row align-items-center py-2">
+                <!-- Redes Sociales -->
+                <div class="col-6 col-md-4 d-flex align-items-center social-icons-container">
+                    <a href="#" class="social-icon me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-icon me-2"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                </div>
+                <!-- Logo -->
+                <div class="col-4 text-center logo-container">
+                    <img src="images/logo.png" alt="Logo" class="logo">
+                </div>
+            </div>
+        </div>
+        <!-- Menú -->
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <!-- Submenú horizontal -->
+                        <li class="nav-item dropdown position-relative">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="platformMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            
+                            <script>
+                                document.getElementById('platformMenu').addEventListener('click', function (e) {
+                                    e.preventDefault(); // Evita el comportamiento predeterminado del enlace (solo si es necesario).
+                                    window.location.href = 'index.html'; // Redirige a index.html
+                                });
+                            </script>
+                            
+                            <div class="dropdown-menu submenu-horizontal submenu-custom p-3" aria-labelledby="platformMenu">
+                                <div class="d-flex">
+                                    <!-- Opción 1 -->
+                                    <a href="index.html" class="dropdown-item text-center px-3">
+                                        <i class="bi bi-cloud-fill icon"></i>
+                                        <h6>Opción 1</h6>
+                                        <p class="small text-white  ">Descripción breve de la opción 1.</p>
+                                    </a>
+                                    
+                                    <!-- Opción 2 -->
+                                    <a href="index.html" class="dropdown-item text-center px-3">
+                                        <i class="bi bi-laptop icon"></i>
+                                        <h6>Opción 2</h6>
+                                        <p class="small text-white">Descripción breve de la opción 2.</p>
+                                    </a>
+                                    <!-- Opción 3 -->
+                                    <a href="index.html" class="dropdown-item text-center px-3">
+                                        <i class="bi bi-gear-fill icon"></i>
+                                        <h6>Opción 3</h6>
+                                        <p class="small text-white">Descripción breve de la opción 3.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contactenos.html">Contactenos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Sección intro -->
+<section id="seccion-intro">
+    <div class="intro-container">
+        <div class="intro-image">
+            <img src="/images/Nosotros.png" alt="Descripción de la imagen">
+        </div>
+        <div class="intro-content">
+            <h1 class="intro-title">¿Quiénes Somos?</h1>
+            
+            <p class="intro-text">
+                Somos una empresa dedicada a la elaboración de productos de plástico, 
+                con un elevado estándar de fabricación y control de calidad. Ofrecemos 
+                servicios integrales que abarcan la elaboración de matrices hasta la 
+                fabricación final de los mismos.
+            </p>
+        </div>
+    </div>
+  </section>
+<!-- Sección intro -->
+<!-- Sección intro modificada -->
+<section id="seccion-invertida">
+    <div class="invertida-container">
+        <div class="invertida-content">
+            <h1 class="invertida-title">Misión</h1>
+
+            <p class="invertida-text">
+                Satisfacer las necesidades de nuestros clientes,
+                 ofreciendo soluciones personalizadas y eficientes 
+                 en la industria del plástico, contribuyendo al crecimiento 
+                 y desarrollo sostenible de nuestra empresa y la sociedad, 
+                 estableciendo relaciones duraderas con nuestros clientes a
+                  través de la confianza y el servicio.
+            </p>
+            <!-- <h2 class="invertida-subtitle">¿Qué buscamos?</h2>
+            <div class="invertida-icons">
+                <div class="invertida-icon">
+                  <img src="./images/software.png" alt="Descripción del ícono 1" class="invertida-icon-image">
+                  <p class="icon-invertida-subtitle">AUTOMATIZAR PROCESOS</p>
+                </div>
+                <div class="invertida-icon">
+                  <img src="./Images/bolsa-de-valores.png" alt="Descripción del ícono 2" class="invertida-icon-image">
+                  <p class="icon-invertida-subtitle">CRECIMIENTO DE VENTAS</p>
+                </div>
+                <div class="invertida-icon">
+                  <img src="./Images/afiliacion.png" alt="Descripción del ícono 3" class="invertida-icon-image">
+                  <p class="icon-invertida-subtitle">IDENTIDAD CORPORATIVA</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="invertida-image">
+            <img src="/images/mision.jpg" alt="Descripción de la imagen">
+        </div>
+    </div>
+</section>
+<!-- Sección intro modificada -->
+<!-- Sección intro -->
+<section id="seccion-intro">
+    <div class="intro-container">
+        <div class="intro-image">
+            <img src="/images/vision.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="intro-content">
+            <h1 class="intro-title">Visión</h1>
+            <h2 class="intro-subtitle">Nos Proyectamos</h2>
+            <p class="intro-text">
+                Ser lideres en la industria de fabricación de productos de plástico,
+                 reconocidos por nuestra innovación, calidad y servicio a nivel nacional e internacional.
+            </p>
+            <!-- <h2 class="intro-subtitle">¿Qué buscamos?</h2>
+            <div class="intro-icons">
+                <div class="intro-icon">
+                  <img src="./images/software.png" alt="Descripción del ícono 1" class="intro-icon-image">
+                  <p class="icon-subtitle">AUTOMATIZAR PROCESOS</p>
+                </div>
+                <div class="intro-icon">
+                  <img src="./Images/bolsa-de-valores.png" alt="Descripción del ícono 2" class="intro-icon-image">
+                  <p class="icon-subtitle">CRECIMIENTO DE VENTAS</p>
+                </div>
+                <div class="intro-icon">
+                  <img src="./Images/afiliacion.png" alt="Descripción del ícono 3" class="intro-icon-image">
+                  <p class="icon-subtitle">IDENTIDAD CORPORATIVA</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+  </section>
+<!-- Sección intro -->
+ <!-- Sección footer -->  
+<footer class="plastics-footer">
+    <div class="container py-5">
+      <div class="row">
+        <!-- Logo y descripción -->
+        <div class="col-md-4">
+          <img src="images/logo.png" alt="Logo de la Empresa" class="footer-logo mb-3">
+          <p class="footer-description">
+            Líderes en soluciones de plásticos sostenibles e innovadores para diversos sectores industriales.
+          </p>
+        </div>
+        <!-- Enlaces rápidos -->
+        <div class="col-md-4">
+          <h5 class="footer-title">Enlaces Rápidos</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </div>
+        <!-- Suscripción -->
+        <div class="col-md-4">
+          <h5 class="footer-title">Suscríbete</h5>
+          <p class="footer-subscription-text">
+            Recibe noticias y actualizaciones sobre nuestros productos innovadores.
+          </p>
+          <form class="footer-form">
+            <input type="email" class="form-control mb-2" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="btn btn-footer">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="footer-copyright">
+            © Copyright 2024 Grupo Moldinova | Desarrollado por Innova Peru Agencia de Marketing S.A.C.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

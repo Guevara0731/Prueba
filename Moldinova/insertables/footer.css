@@ -1,0 +1,110 @@
+/* Encapsular estilos */
+.plastics-footer {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: var(--footer-text-color, #ffffff); /* Color del texto */
+    font-family: Arial, sans-serif;
+  }
+  
+  .plastics-footer .footer-logo {
+    width: 248px; /* Aumenta el tamaño del logo aquí */
+    height: auto; /* Mantén la proporción */
+    object-fit: contain; /* Asegura que no se distorsione */
+    margin-top: -85px;
+  }
+  
+  .plastics-footer .footer-description,
+  .plastics-footer .footer-links,
+  .plastics-footer .footer-form {
+    flex-grow: 1; /* Se asegura que cada elemento mantenga su espacio proporcional */
+    margin: 0 10px; /* Espaciado lateral entre elementos */
+  }
+  
+  .plastics-footer .footer-container {
+    display: flex; /* Activa el modelo de flexbox */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    flex-wrap: wrap; /* Soporte responsivo */
+  }
+  
+  @media (max-width: 768px) {
+    .plastics-footer .footer-container {
+      flex-direction: column; /* Apila los elementos verticalmente en pantallas pequeñas */
+      align-items: center; /* Centra los elementos */
+    }
+  
+    .plastics-footer .footer-logo {
+      margin-bottom: 20px; /* Agrega espaciado inferior al logo */
+    }
+  }
+  
+  
+  .plastics-footer .footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .plastics-footer .footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--footer-title-color, #F20505); /* Color de los títulos */
+  }
+  
+  .plastics-footer .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .plastics-footer .footer-links li a {
+    text-decoration: none;
+    color: var(--footer-link-color, #ffffff); /* Color de los enlaces */
+    transition: color 0.3s ease;
+  }
+  
+  .plastics-footer .footer-links li a:hover {
+    color: var(--footer-link-hover-color, #F20505); /* Color de hover en enlaces */
+  }
+  
+  .plastics-footer .footer-subscription-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .plastics-footer .footer-form .form-control {
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .plastics-footer .footer-form .btn-footer {
+    background-color: var(--footer-button-color, #F20505); /* Botón */
+    color: var(--footer-button-text-color, #2b2d42); /* Texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .plastics-footer .footer-form .btn-footer:hover {
+    background-color: var(--footer-button-hover-color, #F20505); /* Hover del botón */
+  }
+  
+  .plastics-footer .footer-divider {
+    border-color: var(--footer-divider-color, #ffffff33); /* Divisor */
+    margin: 20px 0;
+  }
+  
+  .plastics-footer .footer-social-icons a {
+    color: var(--footer-social-icon-color, #ffffff); /* Iconos sociales */
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .plastics-footer .footer-social-icons a:hover {
+    color: var(--footer-social-icon-hover-color, #F20505); /* Hover de iconos sociales */
+  }
+  
+  .plastics-footer .footer-copyright {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  

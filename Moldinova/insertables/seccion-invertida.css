@@ -1,0 +1,150 @@
+/* Estilos para seccion-invertida */
+#seccion-invertida {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(225deg, #ff0504 50%, #cf0404 60%); /* Cambiado el ángulo del degradado */
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#seccion-invertida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; /* Cambiado para que el triángulo apunte al lado contrario */
+    width: 100%;
+    height: 100%;
+    background: #7d7d7d;
+    clip-path: polygon(0 0, 100% 0, 0 100%); /* Triángulo invertido */
+    z-index: -1;
+}
+
+.invertida-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.invertida-content {
+    flex: 2;
+    text-align: center;
+    justify-items: center;
+}
+
+.invertida-title {
+    font-size: 4rem;
+    margin: 0;
+    color: #E1E2E6;
+}
+
+.invertida-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.invertida-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #E1E2E6;
+    font-weight: bold;
+    width: 500px;
+}
+
+.invertida-title:hover {
+    color: #3a2e18;
+}
+
+.invertida-subtitle:hover {
+    color: #faa80f;
+}
+
+.invertida-image {
+    flex: 1;
+    overflow: hidden; /* Esto asegura que la imagen no se desborde al hacer zoom */
+    
+}
+
+.invertida-image img {
+    max-width: 110%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+    
+}
+
+.invertida-image:hover img {
+    transform: scale(1.1); /* Hace zoom a la imagen */
+}
+
+.invertida-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.invertida-icon {
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.invertida-icon-image {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.invertida-icon:hover .invertida-icon-image {
+    transform: scale(1.1);
+}
+
+.icon-subtitle {
+    font-size: 0.875rem;
+    margin-top: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    #seccion-invertida {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .invertida-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .invertida-image {
+        margin-bottom: 20px;
+        width: 100%; /* Asegura que la imagen ocupe el 100% del ancho disponible */
+    }
+
+    .invertida-title {
+        font-size: 2.5rem; /* Ajustar tamaño de fuente */
+    }
+
+    .invertida-subtitle {
+        font-size: 1.25rem; /* Ajustar tamaño de fuente */
+    }
+
+    .invertida-text {
+        font-size: 1rem; /* Ajustar tamaño de fuente */
+    }
+
+    .invertida-icon-image {
+        width: 70px; /* Tamaño de las imágenes en móviles */
+        height: 70px; /* Tamaño de las imágenes en móviles */
+    }
+
+    .icon-subtitle {
+        font-size: 0.75rem; /* Ajustar tamaño de fuente */
+    }
+}

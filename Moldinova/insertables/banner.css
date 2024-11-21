@@ -1,0 +1,103 @@
+#seccion-banner {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0; /* Elimina cualquier margen que pudiera tener la sección */
+  }
+  
+  .banner-container {
+    position: relative;
+    width: 100%;
+    margin: 0; /* Elimina el margen para que el contenedor ocupe todo el ancho */
+  }
+  
+  .banner {
+    position: relative;
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana del navegador */
+    height: 614px;
+    overflow: hidden;
+    margin-left: calc(-50vw + 50%); /* Alinea el contenedor del banner con los márgenes del navegador */
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    position: absolute; /* Superpone las imágenes */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .banner img.active {
+    opacity: 1;
+    z-index: 1; /* Asegura que la imagen activa esté al frente */
+  }
+  
+  .banner img.inactive {
+    z-index: 0; /* La imagen que se desvanece se coloca detrás de la activa */
+  }
+  
+  .flecha {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, filter 0.3s;
+    z-index: 10; /* Asegúrate de que la flecha esté por encima del contenido del banner */
+  }
+  
+  .flecha:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .izquierda {
+    left: 10px;
+    transform: translateY(-50%); /* Centrar verticalmente */
+  }
+  
+  .derecha {
+    right: 10px;
+    transform: translateY(-50%); /* Centrar verticalmente */
+  }
+  
+  .miniaturas {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1536px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .miniatura {
+    width: 250px;
+    height: 100px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .miniatura:hover {
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      height: 300px;
+    }
+  
+    .miniatura {
+      width: 150px;
+      height: 50px;
+    }
+  }
+  
